@@ -1,0 +1,59 @@
+body { font-family:Arial,Helvetica,sans-serif;margin:0; padding:0; font-size:15px; background-color:transparent; text-align:center;}
+.smallText {font-size:11px; margin:0;text-indent:0}
+form {margin:0}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:normal; }
+h1,h3{color:#303030; margin-bottom:5px}
+h1 { font-size: 1.7em;}
+h2 { font-size: 1.9em; }
+h3 { font-size: 1.8em;}
+h4 { font-size: 1.4em;}
+h5, .rightContent h1 { font-size:15px; font-weight:bold;margin-bottom:5px}
+h6 { line-height:18px; color:#444444; font-size:11px;}
+p {  margin:0 0 5px; padding:0; color:#505050; text-indent:20px; text-align: justify;}
+ul, ol {list-style: none outside none;padding:0; margin:0}
+.wild{width:98%}
+.hide { display: none; }
+input, select, textarea { border:1px solid #E0A949; color:#8B2F20; padding:1px;background-color:#FFFcef}
+.clear-content { clear:both; display: block; padding:0; margin:0}
+
+.pageBlock a:hover{background-color:#FFD050}
+a img {border: medium none ;}
+
+
+a{color:#8B2F20;text-decoration:none;}
+
+.pageBlock{width:850px; margin:0 0 10px; text-align:left; }
+.pageBlock{ background-color:#fff;  border:2px solid #606060; margin-bottom:10px; padding:10px;}
+
+button, .pagination a, .button{cursor:pointer; color:#8B2F20; background-color:#FFF2AB; border:1px solid; border-color: #F3DA95 #E0A949 #E0A949 #F3DA95;-moz-border-radius:2px;padding:1px 6px; margin: 0 3px; vertical-align:bottom; font-weight:bold;}
+button.pretty-hover, .pagination a:hover, .button:hover{background-color:#FFD050;border-color: #FFAF32 #FF8400 #FF8400 #FFAF32;}
+a.button{line-height:22px}
+#wrapper{  margin-top:0}
+.pageBlock{ -moz-border-radius:5px }
+
+/*Reader
+----------------*/
+#mangaBox{min-height:500px; min-width:850px; position: relative; overflow: hidden;_zoom: 1;text-align:center; }
+.controlBox{margin-top:10px}
+#chapterSelectorSelect{margin:0 7px; width:300px}
+.preloaded{position:absolute;left:-100000px; top:-99999px}
+#helpHint{border:1px dotted #E0A949; margin-top:10px; padding:5px; background-color:#FFFCEF}
+#mangaPicture, #nextPicture {cursor:pointer;}
+.nextButton, .prevButton {width:50px}
+.forumButton {display: none;}
+.goToReadmanga{vertical-align:bottom; }
+.resize{background-image:url(../images/zoom_in.gif); width:21px; height:21px }
+.zoomSelected{background-image:url(../images/zoom_out.gif)}
+
+/*Buners
+----------------*/
+/*#topBaner{margin:0 0 10px 80px}*/
+
+
+
+
+
+

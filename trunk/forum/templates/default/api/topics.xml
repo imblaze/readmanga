@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jforum-api response-code="OK">
+	<topics total="${topics.size()}">
+		<#list topics as t>
+			<topic id="${t.id}" title="${t.title?html}"/>
+		</#list>
+	</topics>
+</jforum-api>

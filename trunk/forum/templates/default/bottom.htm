@@ -1,0 +1,32 @@
+</div>
+
+
+    <div class="pageBlock" style="text-align: right;">
+      <div style="text-align: center">
+        <a href="${homepageLink}page/user_agreement">Пользовательское Соглашение</a> |
+        <a href="${homepageLink}page/copyright_holders">Для правообладателей</a>
+        <#if session?exists && session.isAdmin()>| <span class="gen"><a id="adminpanel" href='${JForumContext.encodeURL("/admBase/login")}'>${I18n.getMessage("ForumBase.admin")}</a></span></#if>
+      </div>
+
+    </div>
+<#if hasCodeBlock>
+	<#include "highlighter_js.htm"/>
+</#if>
+
+<iframe src="${contextPath}/ping_session.jsp" height="0" width="0" frameborder="0" scrolling="no"></iframe>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9002078-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?1792884"></script><noscript><img src="http://counter.rambler.ru/top100.cnt?1792884" alt="" width="1" height="1" border="0"/></noscript>
+<!-- end of Top100 code -->
+</body>
+</html>

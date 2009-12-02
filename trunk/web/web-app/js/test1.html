@@ -1,0 +1,58 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="test1();">test1</button>
+<script type="text/javascript">
+    var readmanga_ru_width="900";
+    var readmanga_ru_height="1300";
+    var readmanga_ru_manga="naruto";
+
+    var readmanga_ru_vol="49";
+    var readmanga_ru_c="459";
+
+    function test1(){
+
+       readmanga_r.deserialize=function(params, cast_values, fragment_mode) {
+        var p, key, val, obj = {},
+                cast_types = { 'null': null, 'true': true, 'false': false },
+                decode_uri_component = decodeURIComponent,
+                re = fragment_mode ? /^.*[#]/ : /^.*[?]|#.*$/g;
+
+        params = params.replace(re, '').replace(/\+/g, ' ').split('&');
+
+        while (params.length) {
+            p = params.shift().split('=');
+            key = decode_uri_component(p[0]);
+
+            if (p.length === 2) {
+                val = decode_uri_component(p[1]);
+                if (cast_values) {
+                    if (val && !isNaN(val)) { val = Number(val);
+                    } else if (val === 'undefined') { val = undefined;
+                    } else if (cast_types[val] !== undefined) { val = cast_types[val];
+                    }
+                }
+                obj[key] = val;
+//              if ($.isArray(obj[key])) { obj[key].push(val);} else if (obj[key] !== undefined) { obj[key] = [obj[key], val];} else { obj[key] = val;}
+            } else if (key) {
+                obj[key] = cast_values ? undefined : '';
+            }
+        }
+        return obj;
+    };
+
+
+        var zz = readmanga_r.deserialize("#if_height=1273&if_width=683&test=file:///D:/manga/web/web-app/js/test1.html",true,true);
+        alert (zz) ;
+        alert(zz.test22223);
+        alert(zz.if_width) ;
+    }
+
+</script>
+
+<script type="text/javascript" src="http://readmanga.ru/js/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://readmanga.ru/js/client.js"></script>
+
+</body>
+</html>

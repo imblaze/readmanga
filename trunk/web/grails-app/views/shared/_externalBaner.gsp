@@ -1,0 +1,3 @@
+<noindex>
+<!--  banner here -->
+</noindex>

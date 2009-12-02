@@ -1,0 +1,289 @@
+<html>
+    <head>
+        <title>Grails</title>
+
+        <script type="text/javascript" src="../js/jquery.js"></script>
+
+        <script language="JavaScript" type="text/javascript" >
+          var jQ=jQuery.noConflict();
+        </script>
+        <script type="text/javascript" src="../js/scripts.js"></script>
+
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+        <script type="text/javascript">
+    var pics = [{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-00.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-01.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-02-03.png","w":1525,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-04.jpg","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-05-06.jpg","w":1567,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-07.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-08.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-09.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-10.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-11.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-12.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-13.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-14.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-15.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-16.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-17.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-18.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-19.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-20.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-21.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-22.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-23.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-24.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-25.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-26.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-27.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-28.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-29.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-30.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-31.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-32.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-33.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-34.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-35.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-36.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-37.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-38.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-39.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-40.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-41.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-42.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-43.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-44.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-45.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-46.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-47.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-48.png","w":760,"h":1200},{"url":"http://i.readmanga.ru/fma/v10ch38/fma-38-49.png","w":760,"h":1200}];
+    var prevLink = true;
+    var nextLink = true;// link to prev chapter//link to next chapter
+
+    var cur11 = 0;
+
+    //todo move to js file
+    var h = {
+      preloadImages:function(curNum) {
+        for (var i = curNum+1; i < h.pics.length && i < curNum + 5; i++) {//todo
+          if (!h.pics[i].c) {
+              var pr = jQ("<img class='preloaded'/>").attr("src", h.pics[i].url);
+              jQ("#mangaBox").append(pr);
+              h.pics[i].c = true;
+//            jQ("#mangaBox").append(111);
+          }
+        }
+      },
+      wHeight:function () {
+        var de = document.documentElement;
+        return window.innerHeight || (de && de.clientHeight) || document.body.clientHeight;
+      },
+
+      wWidth:function () {
+        var de = document.documentElement;
+        return window.innerWidth || (de && de.clientWidth) || document.body.clientWidth;
+      },
+
+      resizeImg:function () {
+        var jPic = jQ("#mangaPicture");
+        if (!jQ("#resize")[0].checked) {
+          jPic.attr('height', jPic.attr("rH"));
+          jPic.attr('width', jPic.attr("rW"));
+          return;
+        }
+
+        var availHeight = h.wHeight() - 350 - h.borderWidth; //todo calculate size of headers and footers;
+        var availWidth = h.wWidth() - h.borderWidth;
+
+        var curh = jPic.attr("rH");
+        var curw = jPic.attr("rW");
+
+        var rh = availHeight / curh;
+        var rw = availWidth / curw;
+        var mr = Math.min(rh, rw);
+        if (mr < 0.5) {
+          mr = 0.5;
+        }
+        jPic.attr('height', curh * mr);
+        jPic.attr('width', curw * mr);
+        jQ("#mangaBox").attr('width', curw * mr +h.borderWidth*2);
+      },
+      goNext: function() {
+        h.goPage(h.cur + 1);
+      },
+      goPrev: function() {
+        h.goPage(h.cur - 1);
+      },
+      goPage: function(num) {
+        if (h.changeControl(num)) return;
+        var curPic = h.pics[num];
+        var src = curPic.url;
+        curPic.c = true;
+        jQ(".pageSelector").val(num);
+        var jCurPic = jQ("#mangaPicture");
+        jCurPic.attr('src', src);
+        jCurPic.attr('rH', curPic.h);
+        jCurPic.attr('rW', curPic.w);
+        h.resizeImg();
+        h.preloadImages(num);
+      },
+
+      changeControl:function(num) {   //return false if nead change picture
+        //                jQ("#num").append(num);
+        if (num > h.length || num < -1 || (num >= h.length && !nextLink) || (num < 0 && !prevLink)) {
+          return  true;
+        }
+        h.cur = num;
+        jQ("#mangaPicture").show();
+        if (num < 0 && prevLink) {
+          jQ(".prevChapLink").show();
+          jQ("#mangaPicture").hide();
+          h.disableButton(".prevButton", true);
+          return true;
+        }
+        if (num == 0 && !prevLink) {
+          h.disableButton(".prevButton", true);
+          return false;
+        }
+        if (num >= h.length && nextLink) {
+          jQ(".nextChapLink").show();
+          jQ("#mangaPicture").hide();
+          h.disableButton(".nextButton", true);
+          return true;
+        }
+
+        if (num == (h.length - 1) && !nextLink) {
+          h.disableButton("#nextButton", true);
+          return false;
+        }
+        jQ(".nextChapLink, .prevChapLink").hide();
+        h.disableButton(".prevButton, .nextButton", false);
+        return false;
+      },
+      disableButton: function(selector, dis) {
+        if (dis) {
+          jQ(selector).attr("disabled", "true");
+        } else {
+          jQ(selector).removeAttr("disabled");
+        }
+      },
+      changeResizeControl:function() {
+        var c = jQ("#resize")[0];
+        c.checked = !c.checked;
+        h.resizeImg();
+      },
+      goToChapter:function(path){
+        location.href=path;
+        return false;
+      },
+      init: function(p, c) {
+        h.pics = p;
+        h.length = p.length;
+        h.goPage(c);
+        window.onkeyup = function(e) {
+          switch (e.keyCode) {
+            case 32:
+              h.changeResizeControl();
+              return false;
+            case 37:
+              h.goPrev();
+              return false;
+            case 39:
+              h.goNext();
+              return false;
+          }
+        };
+        jQ(".pageNumber").empty().append(h.length);
+      },
+      pics:undefined,
+      cur:0,
+      length:0,
+      borderWidth:4
+    };
+
+    jQ(document).ready(function() {
+      h.init(pics, 0);
+    });
+
+    jQ(window).resize(function() {
+      h.resizeImg();
+    });
+  //todo add hidden to store the state during reload
+
+
+
+  </script>
+
+    </head>
+<body class="sk1">
+
+<div class="pageHeader">
+    <div class="page" style="padding:0">
+        <div style="height:44px">
+
+            Header (some picture and baner)
+        </div>
+      <div id="navMenu" style="margin-top:2px">
+
+        <div id="navLinks">
+          <a href="/manga/admin/view/index">Главная[]</a> |
+          <a href="/manga/admin/view/index">Список Манги[]</a> |
+          <a href="/manga/admin/view/index">Наши координаты[]</a>
+
+        </div>
+        <div id="themControl">
+          <button onclick="setSkin('st2');">st2</button>
+          <button onclick="setSkin('st3');">st3</button>
+          <button onclick="setSkin('st4');">st4</button>
+        </div>
+        <div class="clear-content"><!----></div>
+
+      </div>
+    </div>
+</div>
+<div id="wrapper">
+  <div class="page">
+
+    <div class="pageBlock">
+            <input type="checkbox" name="resize" id="resize" onchange="h.resizeImg();"/><label for="resize">Resize</label>
+
+            <select name="null" onchange="h.goToChapter(this.value);" style="width:300px" id="null" >
+
+<option value="2" >2</option>
+</select>
+            <button onclick="h.goPrev();" class="prevButton" ><--</button>
+            page <select name="null" class="pageSelector" onchange="h.goPage(this.value);" >
+<option value="0" >1</option>
+<option value="1" >2</option>
+<option value="2" >3</option>
+<option value="3" >4</option>
+
+<option value="4" >5</option>
+<option value="5" >6</option>
+<option value="6" >7</option>
+<option value="7" >8</option>
+<option value="8" >9</option>
+<option value="9" >10</option>
+<option value="10" >11</option>
+<option value="11" >12</option>
+<option value="12" >13</option>
+
+<option value="13" >14</option>
+<option value="14" >15</option>
+<option value="15" >16</option>
+<option value="16" >17</option>
+<option value="17" >18</option>
+<option value="18" >19</option>
+<option value="19" >20</option>
+<option value="20" >21</option>
+<option value="21" >22</option>
+
+<option value="22" >23</option>
+<option value="23" >24</option>
+<option value="24" >25</option>
+<option value="25" >26</option>
+<option value="26" >27</option>
+<option value="27" >28</option>
+<option value="28" >29</option>
+<option value="29" >30</option>
+<option value="30" >31</option>
+
+<option value="31" >32</option>
+<option value="32" >33</option>
+<option value="33" >34</option>
+<option value="34" >35</option>
+<option value="35" >36</option>
+<option value="36" >37</option>
+<option value="37" >38</option>
+<option value="38" >39</option>
+<option value="39" >40</option>
+
+<option value="40" >41</option>
+<option value="41" >42</option>
+<option value="42" >43</option>
+<option value="43" >44</option>
+<option value="44" >45</option>
+<option value="45" >46</option>
+<option value="46" >47</option>
+<option value="47" >48</option>
+</select>
+
+             of <span class="pageNumber">0</span>
+            <button onclick="h.goNext();" class="nextButton">--></button>
+            <button>bookmark</button>
+            <span id="num"> </span>
+        </div>
+
+        <div class="pageBlock" id="mangaBox">
+
+            Naruto - 2<br/>
+            <img id="mangaPicture" onclick="h.goNext();" title="Следуюущая страница"/>
+            <a href="[path to prev chepter]" class="hide prevChapLink">prev chapter</a>
+            <a href="[path to next chepter]" class="hide nextChapLink">next chapter</a>
+        </div>
+
+        <div class="pageBlock"> List of chapters <-- page XX of XX --> bookmark</div>
+
+    <div class="pageBlock">
+      Footer (всякая фигня)
+    </div>
+  </div>
+</div>
+</body>
+</html>

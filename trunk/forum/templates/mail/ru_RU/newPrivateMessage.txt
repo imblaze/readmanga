@@ -1,0 +1,5 @@
+<#setting number_format = "#"/>
+Здравствуйте, ${user.username},
+
+Вы получили новое личное сообщение на ${forumName}.
+Ссылка : ${path}
