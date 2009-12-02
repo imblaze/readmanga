@@ -1,0 +1,2 @@
+#!/bin/bash
+./process.sh http://www.project5555.com/p1/gos/GoS_v01c01.rus.zip ziptest

@@ -1,0 +1,116 @@
+<#setting number_format = "#"/>
+<#setting datetime_format = dateTimeFormat/>
+<#assign logged = logged?default(false)/>
+<#assign language = language?default("en_US")/>
+<#assign hasCodeBlock = hasCodeBlock?default(false)/>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=${encoding}" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<style type="text/css">@import url( ${contextPath}/templates/${templateName}/styles/style.css?${startupTime} );</style>
+<style type="text/css">@import url( ${contextPath}/templates/${templateName}/styles/${language}.css?${startupTime} );</style>
+<style type="text/css">@import url( ${contextPath}/templates/${templateName}/styles/${language}.css?${startupTime} );</style>
+
+<#if hasCodeBlock>
+	<style type="text/css">@import url( ${contextPath}/templates/${templateName}/styles/SyntaxHighlighter.css?${startupTime} );</style>
+</#if>
+
+<title>ReadManga.ru ${pageTitle?default("Forum")?html}</title>
+<link rel="shortcut icon" href="${homepageLink}images/favicon.ico" type="image/x-icon" />
+</head>
+<body class="${language}">
+
+<div class="pageHeader">
+  <div id="header">
+    <div id="headerFirst">
+      <div id="logo">
+      <a href="${homepageLink}" class="nonHover">
+        <img src="${contextPath}/templates/${templateName}/images/manga/logo_filled.jpg" border='0' alt="ReadManga.ru" height="45" title="ReadManga.ru -- читай мангу с удовольствием" width="300"/>
+      </a>
+
+      </div>
+        <div id="accountMenu">
+            <#if logged>
+                <a id="myprofile" class="mainmenu" href="${JForumContext.encodeURL("/user/edit/${session.userId}")}">${I18n.getMessage("ForumBase.profile")}</a> |
+                <#if !sso>
+                    <a id="logout" class="mainmenu" href="${JForumContext.encodeURL("/user/logout")}">${I18n.getMessage("ForumBase.logout")} [${session.username}] </a>
+                </#if>
+            </#if>
+
+            <#if !logged && !sso>
+                <a id="register" class="mainmenu" href="${JForumContext.encodeURL("/user/insert")}">${I18n.getMessage("ForumBase.register")}</a> |
+                <a id="login" class="mainmenu" href="${JForumContext.encodeURL("/user/login")}">${I18n.getMessage("ForumBase.login")}</a>
+            </#if>
+        </div>
+
+      <div id="mangaSearch">
+        <form action="${homepageLink}search" method="post" name="form" id="form" >
+          <input type="text" name="q" id="q" value="" />
+          <button type="submit">Поиск</button>
+        </form>
+      </div>
+
+        <div class="clear-content"><!----></div>
+
+    </div>
+    <div>
+      <div id="navLinks">
+        <a href="${homepageLink}">Главная</a> |
+        <a href="${homepageLink}list">Каталог манги</a> |
+        <a href="${contextPath}">Форум</a> |
+        <a href="${homepageLink}about">О нас</a>
+      </div>
+      <div id="additionalMenu">
+        <div id="forumMenu">
+
+            <a id="search" href='${JForumContext.encodeURL("/search/filters")}'><b>${I18n.getMessage("ForumBase.search")}</b></a>
+            |
+            <a id="latest" href='${JForumContext.encodeURL("/recentTopics/list")}'>${I18n.getMessage("ForumBase.recentTopics")}</a>
+            |
+            <a id="hottest" href='${JForumContext.encodeURL("/hottestTopics/list")}'>${I18n.getMessage("ForumBase.hottestTopics")}</a>
+            |
+            <a id="latest2" href='${JForumContext.encodeURL("/user/list")}'>${I18n.getMessage("ForumBase.usersList")}</a>
+            <#if canAccessModerationLog?default(false)>|
+                <a id="moderationlog" href='${JForumContext.encodeURL("/moderation/showActivityLog")}'>${I18n.getMessage("ModerationLog.moderationLog")}</a>
+            </#if>
+
+            <#if logged>
+                <#if bookmarksEnabled>|
+                    <a href='${JForumContext.encodeURL("/bookmarks/list/${session.userId}")}'>${I18n.getMessage("Bookmarks.myBag")}</a>
+                </#if>
+                | <a id="privatemessages" href='${JForumContext.encodeURL("/pm/inbox")}'>
+                <#if (session.privateMessages > 0)>
+                    ${I18n.getMessage("ForumBase.newPm")}: (${session.privateMessages})
+                    <#else>
+                        ${I18n.getMessage("ForumBase.privateMessages")}
+                </#if>
+                </a>
+            </#if>
+        </div>
+       </div>
+      <div class="clear-content"><!----></div>
+    </div>
+  </div>
+</div>
+
+<div class="pageBlock" id="mangaBox">
+    <div class="baner" id="topBaner">
+        <noindex>
+            <script type="text/javascript"><!--
+            google_ad_client = "pub-8698810957647537";
+            google_ad_slot = "3992474081";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            //-->
+            </script>
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+        </noindex>
+
+
+
+
+     </div>
+    
+

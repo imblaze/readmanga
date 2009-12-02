@@ -1,0 +1,182 @@
+body { font-family:Arial,Helvetica,sans-serif;margin:0; padding:0; font-size:15px; background-color:#ddd; text-align:center;}
+.smallText {font-size:11px; margin:0;text-indent:0}
+form {margin:0}
+
+/* Typography
+-----------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:normal; }
+h1,h3{color:#303030; margin-bottom:5px}
+h1 { font-size: 2.0em;}
+h2 { font-size: 1.9em; }
+h3 { font-size: 1.8em;}
+h4 { font-size: 1.4em;}
+h5, .rightContent h1 { font-size:15px; font-weight:bold;margin-bottom:5px}
+h6 { line-height:18px; color:#444444; font-size:11px;}
+p {  margin:0 0 5px; padding:0; color:#505050; text-indent:10px; text-align: justify;}
+ul {list-style: none outside none;padding:0; margin:0}
+ol{padding:0 0 0 25px; margin:0}
+.wild{width:98%}
+table {border-collapse:collapse; border-spacing:0;}
+.hide { display: none; }
+.left {float:left}
+input, select, textarea { border:1px solid #E0A949; color:#8B2F20; padding:2px;background-color:#FFFcef}
+input.number { width: 60px}
+.clear-content { clear:both; display: block; padding:0; margin:0}
+.margin-left {margin-left:20px}
+.cpFrame{border:0 none}
+sup {color:red; }
+.chapterNew {color:#66CC00}
+
+a:hover{background-color:#FFD050}
+.nonHover{background-color:transparent !important}
+a img {border: medium none ;}
+a.rss{background:transparent url(../images/xml_button.gif) no-repeat scroll 0; padding:4px 0 0 18px; line-height:18px;}
+
+
+a{color:#8B2F20;text-decoration:none;}
+#logo, #mangaSearch, #accountMenu {float:left}
+#accountMenu{margin-left:10px;width:380px; padding-top:12px;text-align:right;}
+#accountMenu a{color:#fff; font-size:11px}
+#mangaSearch{padding-top:12px; margin-right:10px; width:250px; text-align:right }
+
+#navLinks{float:right;text-align:right; width:350px}
+#navLinks a {font-weight:bold;}
+#themControl{}
+#additionalMenu {float:right;text-align:left; width:600px}
+
+#headerFirst {height:47px;}
+
+.pageBlock, #header{width:950px; margin:0 auto; text-align:left; }
+.pageBlock{ background-color:#fff;  border:2px solid #606060; margin-bottom:10px; padding:10px;}
+
+
+
+button, .pagination a, .button{cursor:pointer; color:#8B2F20; background-color:#FFF2AB; border:1px solid; border-color: #F3DA95 #E0A949 #E0A949 #F3DA95;-moz-border-radius:2px;padding:1px 6px; margin: 0 3px; vertical-align:bottom;font-weight:bold;}
+button.pretty-hover,.button:hover,.pagination a:hover{background-color:#FFD050;border-color: #FFAF32 #FF8400 #FF8400 #FFAF32;}
+a.button{line-height:22px}
+.pagination { overflow: hidden; font-weight:normal; }
+.pagination a { text-decoration:none; }
+.pagination span { padding: 2px 3px; }
+
+        .cTable {font-size:15px; }
+        .cTable .headL {background:transparent url(../images/skin1/ct_tl.gif) no-repeat scroll 0; width:17px;}
+        .cTable .headR { background: transparent url(../images/skin1/ct_tr.gif) no-repeat scroll right; width:17px; }
+        .cTable th { background-color:#D7E2E8; border:0 none;font-weight:bold;text-align:left}
+        .cTable td { border-bottom:1px solid #DBE5EA;}
+        .cTable td, .cTable th { height:29px; padding:0;}
+
+
+#wrapper{  margin-top:0}
+.leftContent{float:left; width:640px}
+.rightContent{margin-left:10px ;width:280px; float:left; min-height:230px; background-color:#eee; padding:10px}
+.pageHeader{height:75px; background:transparent url(../images/skin1/page_header_bg.png) repeat-x scroll 0 0; margin-bottom:10px}
+.pageBlock,.rightContent{ -moz-border-radius:5px }
+.skinButton, .colorButton{height:14px; width:14px; border:1px solid #DBE5EA;cursor:pointer; vertical-align:middle;}
+.colorButton {background:#FFF url(../images/color_swatch.png) repeat scroll 0 0;height:15px; width:15px;}
+
+/*Manga list
+----------------*/
+.alpha-anchor { border-bottom:2px solid #F3DA95;font-size:16pt; font-weight:bold; }
+.alpha-anchor a {font-size:13pt;}
+.letters a {margin-right:5px; font-size:13pt}
+.manga-group,.alpha-anchor{ margin:10px 0 5px; padding:0 5px;}
+.genresList, .leterList{margin-left:10px}
+
+/*Manga Page
+----------------*/
+.mangaDescription img, #mangaDescPicture img{border:1px solid #444444; margin-right:10px}
+#mangaDescPicture {margin-right:10px}
+#mangaSettings {width:345px}
+blockquote {background: #E1EBF2 url(../images/quote.gif) no-repeat scroll 6px 8px; border:1px dashed #DBDBCE; font-size:0.95em; margin:0.5em 10px 0 10px; overflow:hidden; padding:5px;}
+blockquote cite {display:block;font-size:0.9em;font-style:normal;font-weight:bold;margin-left:20px;}
+blockquote.uncited {padding-top:25px;}
+
+/*Reader
+----------------*/
+#mangaBox{min-height:450px; min-width:850px; position: relative; overflow: hidden;_zoom: 1;}
+#chapterSelectorSelect{margin:0 7px; width:300px}
+.preloaded{position:absolute;left:-100000px; top:-99999px}
+#helpHint{border:1px dotted #E0A949; margin-top:10px; padding:5px; background-color:#FFFCEF}
+#mangaPicture, #nextPicture {cursor:pointer;}
+.nextButton, .prevButton {width:50px}
+.goToReadmanga{display: none;}
+.resize{background-image:url(../images/zoom_in.gif); width:21px; height:21px }
+.zoomSelected{background-image:url(../images/zoom_out.gif)}
+
+
+#addTwitt, #twitter {margin-top: 10px}
+#lastTwitts {font-size:10pt}
+
+/*Uploadder
+----------------*/
+div.flash {-moz-border-radius:5px; border-color:#D9E4FF; margin:10px 5px; width:375px; }
+div.fieldset {border:1px solid #AFE14C; margin:10px 0;padding:20px 10px;}
+div.fieldset span.legend { background-color:#FFFFFF; color:#73B304; font-family:Arial,Helvetica,sans-serif; font-size:14px; font-style:normal; font-variant:normal; font-weight:700; line-height:normal; padding:3px;position:relative; top:-30px;}
+.progressWrapper { width: 357px; overflow: hidden;}
+.progressContainer { margin: 5px; padding: 4px; border: solid 1px #E8E8E8; background-color: #F7F7F7; overflow: hidden;}
+/* Message */
+.message {margin: 1em 0;padding: 10px 20px;border: solid 1px #FFDD99;background-color: #FFFFCC;overflow: hidden;}
+/* Error */
+.red { border: solid 1px #B50000; background-color: #FFEBEB;}
+/* Current */
+.green { border: solid 1px #DDF0DD; background-color: #EBFFEB; }
+/* Complete */
+.blue {	border: solid 1px #CEE2F2; background-color: #F0F5FF; }
+.progressName { font-size: 8pt; font-weight: 700; color: #555; width: 323px; height: 14px; text-align: left; white-space: nowrap; overflow: hidden;}
+.progressBarInProgress,.progressBarComplete, .progressBarError { font-size: 0; width: 0%; height: 2px; background-color: blue; margin-top: 2px;}
+.progressBarComplete { width: 100%; background-color: green; visibility: hidden; }
+.progressBarError { width: 100%; background-color: red; visibility: hidden; }
+.progressBarStatus { margin-top: 2px; width: 337px; font-size: 7pt; font-family: Arial; text-align: left; white-space: nowrap;}
+a.progressCancel { font-size: 0; display: block; height: 14px; width: 14px; background: url(../images/cancelbutton.gif) no-repeat -14px 0; float: right;}
+a.progressCancel:hover {background-position: 0 0;}
+
+
+#twittMessage {width:99%}
+
+
+/*Skin1
+----------------*/
+.sk1 {background:#DDDDDD none repeat scroll 0 0}
+.skin1{background:#DDDDDD }
+
+/*Skin2
+----------------*/
+.sk2 {background:#066E95 none repeat scroll 0 0}
+.skin2{background:#066E95}
+
+/*Skin3
+----------------*/
+.sk3 {background:#95AD23 none repeat scroll 0 0}
+.skin3{background:#95AD23}
+
+/*Skin4
+----------------*/
+.sk4 {background:#73626E none repeat scroll 0 0}
+.skin4{background:#73626E}
+
+/*Skin5
+----------------*/
+.sk5 {background:#4D3339 url(../images/skin1/texturebg.2.png) repeat scroll 0 0}
+.skin5{background:#4D3339}
+
+/*Skin6
+----------------*/
+.sk6 {background:#FFFFFF url(../images/skin1/texturebg.8.png) no-repeat fixed 20% 50%}
+.skin6{background:#FFF url(../images/skin1/texturebg.8.m.gif) repeat-x scroll 0 0}
+
+/*Skin7
+----------------*/
+.sk7 {background:#E2E2E2 url(../images/skin1/texturebg.7.png) no-repeat fixed 20% 50%}
+.skin7{background:#FFF url(../images/skin1/texturebg.7.m.gif) repeat-x scroll 0 0}
+
+/*Buners
+----------------*/
+#topBaner{margin:0 0 10px 100px}
+#middleBaner{margin-left:90px}
+#rightBaner {margin: 10px -10px}
+
+
+
+
+
+
